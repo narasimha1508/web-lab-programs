@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Stacking the elements</title>
+<link rel="stylesheet" type="text/css" href="5a.css"/>
+<script type="text/javascript">
+var topLayer="third";
+function my_fun(toTop)
+{
+var oldTop=document.getElementById(topLayer).style;
+var newTop=document.getElementById(toTop).style;
+oldTop.zIndex="0";
+newTop.zIndex="100";
+topLayer=document.getElementById(toTop).id;
+}
+</script>
+</head>
+<body>
+<span class="text1" id="first" onmouseover="my_fun(id);">
+This is a story about four people;Everbody,Somebody,Anybody, and Nobody. There was an
+important job to be done and Everbody was asked to do do it. Everybody was sure somebody would
+do it.</span>
+<span class="text2" id="second" onmouseover="my_fun(id);">
+Once upon a time, there lived a big lion in a jungke. Everyday he hunted and killed many animals to
+satisfy his hunger. The animals were worried that oneday none of them would be left alive.</span>
+<span class="text3" id="third" onmouseover="my_fun(id);">Dassera is one of the most important
+Hindu festival. It is the festival thatcelebrates the victory of lord Rama over Ravana of lanka on this
+day, Rana had killed Ravana who had abducted Ramas wife sita to the kingdom of Lanka.</span>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTMl 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Pattern Matching Regular Expression</title>
+<script type="text/javascript">
+function TestString(str)
+{
+document.write("The given string is:");
+document.write("<em>"+str+"</em>"+"<br/>");
+var i=str.match(/[aeiouAEIOU][a-zA-Z]*/);
+return i;
+}
+</script>
+</head>
+<body>
+<h3>
+<script type="text/javascript">
+var input_str=prompt("Enter some string here","");
+p=TestString(input_str);
+document.write("The leftmost vowel is found at index"+" "+p.index);
+</script>
+</h3>
+</body>
+</html>
+

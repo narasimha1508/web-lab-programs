@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="stud.css"?>
+<Student>
+<StudentInfo>
+<USN>1DA16CS174</USN>
+<Name>Narasimha Sindhnoor</Name>
+<College>Dr.Ait</College>
+<Branch>CSE</Branch>
+<Year_of_Join>2016</Year_of_Join>
+<Email>narasimhasindhnoor@gmail.com</Email>
+</StudentInfo>
+<StudentInfo>
+<USN>1DA16CS180</USN>
+<Name>Shubh Prabhat Pandey </Name>
+<College>Dr.Ait</College>
+<Branch>CSE</Branch>
+<Year_of_Join>2016</Year_of_Join>
+<Email>pandey@gmail.com</Email>
+</StudentInfo>
+</Student>
+

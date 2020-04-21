@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTMl 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+function fun(str)
+{
+var num=Number(str);
+var i=0,j=1,k,count;
+if(num==0)
+document.write("<h3>"+"No number"+"</h3>");
+else if(num==1)
+{
+document.write("<h3>"+"The Fibonacci series is as follows:"+"</h3>");
+document.write(i);
+}
+else
+{
+document.write("<h3>"+"The Fibonacci series is as follows:"+"</h3>");
+document.write(i);
+document.write(","+j);
+for(count=2;count<num;count++)
+{
+k=i+j;
+i=j;
+j=k;
+document.write(","+k);
+}
+}
+}
+</script>
+<title>Program 2a</title>
+</head>
+<body>
+<script type="text/javascript">
+var input_str=prompt("Enter the limits","");
+if(input_str=="")
+{
+alert("Please enter a valid number");
+input_str=prompt("Enter the limits","");
+}
+fun(input_str);
+</script>
+</body>
+</html>
+

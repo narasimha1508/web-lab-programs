@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Reverse of a number</title>
+<script type="text/javascript">
+var result;
+function reverser(num)
+{
+var digit,position=0;
+if(num<10)
+return num;
+result=num%10;
+num=Math.floor(num/10);
+do
+{
+digit=num%10;
+result=10*result+digit;
+num=Math.floor(num/10);
+}while(num>=1);
+return result;
+}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+var num1=prompt("Enter the number","");
+result=reverser(num1);
+document.write("The reverse of"+" "+num1+" "+"is:"+result+"<br/>");
+</script>
+</body>
+</html>
+

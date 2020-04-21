@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD Xhtml 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Program 4b</title>
+<script type="text/javascript">
+function validate_usn()
+{
+var str1=document.getElementById("usn");
+var valid_usn=str1.value.search(/^[1-4]{1}[A-Z]{2}\d{2}[A-Z]{2}\d{3}$/i);
+var str2=document.getElementById("semi");
+var valid_sem=str2.value.search(/^[1-8]{1}$/);
+if(valid_usn>=0 && valid_sem>=0)
+{
+alert("Valid USN and Semester");
+}
+else if(valid_usn<0 &&valid_sem>=0)
+{
+alert("invalid USN");
+}
+else if(valid_usn>=0 && valid_sem<0)
+{
+alert("inavlid Semester");
+}
+else
+{
+alert("invalid USN and Semester");
+}
+}
+</script>
+</head>
+<body>
+<form id="form1">
+Enter your USN:<input type="text" id="usn"/>
+<br/>
+<br/>
+Enter your Semester:<input type="test" id="semi"/>
+<br/>
+<input type="button" value="Submit" name="submit" onclick="validate_usn()"/>
+<input type="reset" value="Reset" name="reset"/>
+</form>
+</body>
+</html>
+
